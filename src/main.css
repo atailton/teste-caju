@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  background:#FFFFFA;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+input.error {
+    border: 1px solid #cc0033;
+    outline: none;
+}
+
+
+
+header {
+	width:100%;
+  background: #313435;
+}
+
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:0px auto;
+  padding-top: 20px;
+	background:#313435;
+}
+
+.menu_bar {
+	display:none;
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li {
+	float:right;
+}
+
+header nav ul li a {
+	color:#797d8c;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+
+header nav ul li a:hover {
+	color:#6b9fed;
+}
+
+.logom{
+  margin-top: 2px;
+}
+.logopc{
+  float: left;
+}
+
+.topo{
+  background:#2a2e30;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.94;
+
+
+}
+
+.topoTextos{
+  margin-top: 5%;
+}
+
+.topoTextos p{
+  font-size: 36pt;
+  color: white;
+
+}
+.topoTextos span{
+  color: white;
+  font-size: 11pt;
+  color: #899097;
+}
+
+.tipoForm{
+    margin-top: 30px;
+
+
+}
+
+#obrigatorio{
+  color:#6b9fed;
+  font-size: 10pt;
+  font-style: italic;
+
+}
+
+
+.input-nome{
+  width: 87%;
+  height: 3vh;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 1px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background-color: #414547;
+  padding-left: 35px;
+  color: white;
+  font-weight: normal;
+  font-size: 7pt;
+}
+.icon-user{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+
+.input-email{
+  width: 73%;
+  height: 3vh;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 1px;
+  background-color: #414547;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  margin-top: 2px;
+  padding-left: 35px;
+  color: white;
+  font-weight: normal;
+  font-size: 7pt;
+}
+
+.icon-email{
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+.input-contato{
+  width: 76%;
+  height: 3vh;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 1px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background-color: #414547;
+  margin-top: 2px;
+  padding-left: 30px;
+  color: white;
+  font-weight: normal;
+  font-size: 7pt;
+
+}
+
+.icon-cel{
+  position: absolute;
+  margin-top: -27px;
+  margin-left: 175px;
+
+
+}
+.input-mensagem{
+  width: 87%;
+  height: 6vh;
+  padding: 5px;
+  padding-top: 8px;
+  border-radius: 1px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background-color: #414547;
+  margin-top: 2px;
+  padding-left: 35px;
+  color: white;
+  font-weight: normal;
+  font-size: 8pt;
+  resize: none
+}
+
+.icon-mensagem{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+.btn-contato{
+  width: 100%;
+  height: 5vh;
+  background-color: #6fa5f7;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 8pt;
+  border-radius: 1px;
+}
+
+.formCelular{
+  display: none;
+}
+
+.imgPC img{
+    width: 49%;
+
+}
+
+.imgPC{
+  margin-top: 18px;
+
+}
+
+.backImgFundo{
+  background-image: url("../images/background.jpg");
+  width: 100%;
+  height:100vh;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.barra{
+  background:#f8f8f8;
+  width: 100%;
+  height: 33vh;;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.barra p {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #6fa5f7;
+}
+
+.barra span{
+  color: #7e7e7e;
+}
+
+.gestaoMedica{
+  width: 25%;
+  height: 100%;
+
+  border-right: 1px solid #dddddd;
+
+}
+.barra img{
+  margin-top: 7%;
+}
+
+.monitoramento{
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #dddddd;
+}
+.integracao{
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #dddddd;
+}
+.usabilidade{
+  width: 25%;
+  height: 100%;
+
+}
+
+.campoBottom{
+  background:white;
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.titleCampoBottom{
+  font-size: 22pt;
+  color: #3b4048;
+}
+.campoBottomLine1{
+  color: #555a69;
+  font-size: 11pt;
+}
+
+.campoBottomLine2{
+  color: #899097;
+  font-size: 11pt;
+}
+
+.campoInternoBottom{
+  background:white;
+  width: 45%;
+  height: 67vh;
+
+}
+
+.campoInternoBottomLeft{
+  width: 49%;
+  height: 100%;
+
+  float: left;
+
+}
+.campoInternoBottoRight{
+  width: 49%;
+  height: 100%;
+  float: right;
+
+}
+
+.quadradoUp{
+  width: 100%;
+  height: 56%;
+  background: #3598c1;
+}
+
+.quadradoDown{
+  width: 100%;
+  height: 41%;
+  background: #414a53;
+  margin-top: 4%;
+}
+
+.quadradoRightCompleto{
+  width: 100%;
+  height: 100%;
+  background: #8161e7;
+  background-image: url("../images/grid3.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+}
+
+.number{
+  font-size: 16pt;
+  font-family: 'Source Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-left: -9%;
+  margin-top: 3%;
+  float: left;
+}
+
+.fundoNumber{
+  background: white;
+  padding: 4%;
+  width: 5%;
+  color: white;
+  float: left;
+  opacity: 0.2;
+}
+
+.titleCaixa{
+  font-size: 17pt;
+  color: white;
+  font-weight: bold;
+  margin-left: 12%;
+}
+
+.textCaixaBlock{
+  font-size: 9pt;
+  color: white;
+  display: block;
+  width: 70%;
+  margin-left: 12%;
+  line-height: 1.5;
+}
+
+.imgGrid3{
+  width: 25%;
+  height: auto;
+  float: right;
+  margin-right: 3%;
+}
+
+.news{
+  background: #f8f8f8;
+  border: 1px solid #efeeee;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-right: 15px;
+}
+
+.titleNews{
+  font-size: 16pt;
+  font-weight: bold;
+  color: #6fa5f7;
+}
+.textNews{
+  font-size: 11pt;
+  color: #7e7e7e;
+}
+
+.boxCarrossel{
+  width: 775px;
+
+  overflow: hidden;
+}
+
+.boxCarrossel ul{
+  list-style: none;
+  width: 1000%
+}
+
+.boxCarrossel ul li{
+  float: left;
+}
+.back{
+  float: left;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 55px;
+}
+
+.next{
+  float: right;
+  position: absolute;
+  margin-left: 780px;
+  margin-top: 55px;
+}
+
+.circulo1{
+  font-size: 9pt;
+}
+.circulo2{
+  font-size: 9pt;
+}
+.circulo3{
+  font-size: 9pt;
+}
+
+.footer{
+  width: 100%;
+  height: 15vh;
+  background-color: #333b43;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #9196a8;
+}
+
+.footer ul{
+  list-style: none;
+  width: 52%;
+  font-size: 10pt;
+
+}
+
+.footer ul li{
+  float: left;
+
+}
+
+.footer_01{
+  margin-right: 15%;
+}
+
+.footer_02{
+  margin-right: 4%;
+}
+
+.footer_02 img{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.footer_03{
+  margin-right: 10%;
+}
+
+.footer_03 img{
+    vertical-align: -10%;
+      padding-right: 5px;
+}
+
+.footer_04{
+  margin-right: 3%;
+}
+
+.footer_04 img{
+    vertical-align: middle;
+      padding-right: 5px;
+}
+
+.footer_06{
+  display: none;
+}
+
+.campoInternoBottomCel{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+    z-index: 1;
+	}
+
+  header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#222426;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+  .logopc{
+    display: none;
+  }
+  .backImgFundo{
+    display: none;
+  }
+  .imgPC{
+      display: none;
+  }
+  .barra{
+      display: none;
+  }
+
+  .topoTextos p{
+    font-size: 30pt;
+    color: white;
+
+  }
+
+  .btn-contato-cel{
+    margin-bottom: 30px;
+  }
+
+  .formPC{
+    display: none;
+  }
+  .formCelular{
+    display: block;
+  }
+
+  .input-nome-cel{
+    width: 87%;
+    height: 3vh;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 1px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #414547;
+    padding-left: 35px;
+    color: white;
+    font-weight: normal;
+    font-size: 7pt;
+  }
+  .icon-user-cel{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 13px;
+  }
+
+
+  .input-email-cel{
+    width: 87%;
+    height: 3vh;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 1px;
+    background-color: #414547;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    margin-top: 2px;
+    padding-left: 35px;
+    color: white;
+    font-weight: normal;
+    font-size: 7pt;
+  }
+
+  .icon-email-cel{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 13px;
+  }
+
+  .input-contato-cel{
+    width: 89%;
+    height: 3vh;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 1px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #414547;
+    margin-top: 4px;
+    padding-left: 30px;
+    color: white;
+    font-weight: normal;
+    font-size: 7pt;
+
+  }
+
+  .icon-cel-cel{
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 12px;
+
+
+  }
+  .input-mensagem-cel{
+    width: 87%;
+    height: 12vh;
+    padding: 5px;
+    padding-top: 8px;
+    border-radius: 1px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #414547;
+    margin-top: 2px;
+    padding-left: 35px;
+    color: white;
+    font-weight: normal;
+    font-size: 8pt;
+    resize: none
+  }
+
+  .icon-mensagem-cel{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 13px;
+  }
+
+  .btn-contato-cel{
+    width: 105%;
+    height: 5vh;
+    background-color: #6fa5f7;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 8pt;
+    border-radius: 1px;
+  }
+
+  .caixasPC{
+    display: none;
+  }
+
+  .campoInternoBottomCel{
+    display: block;
+  }
+
+  .quadradoRightCompleto{
+      margin-top: 4%;
+      height: 45vh;
+      background-image: url();
+  }
+
+  .campoInternoBottomLeft{
+    margin-left: 27%;
+  }
+
+  .campoBottom{
+    height: 200vh;
+  }
+
+  .carrosselPC{
+    display: none;
+  }
+
+  .boxCarrossel{
+    width: 248px;
+  }
+
+  .next{
+    float: right;
+    position: absolute;
+    margin-left: 252px;
+    margin-top: 55px;
+  }
+
+  .footer{
+    margin-bottom: 0;
+    height: 20vh;
+
+}
+
+  .textFooter{
+    display: none;
+  }
+
+  .footer_05{
+    display: none;
+  }
+  .footer_06{
+    display: block;
+    margin-left: 33%;
+    margin-top: 30px;
+  }
+
+  .footer ul li{
+    float: none;
+
+  }
+  .footer_02 img{
+    float: left;
+    margin-top: 20px;
+    margin-left: 35%;
+  }
+  .footer_03 img{
+    float: left;
+    margin-top: 20px;
+  }
+  .footer_04 img{
+    float: left;
+    margin-top: 20px;
+  }
+
+  .cajuName{
+    font-size: 12pt;
+    margin-left:15%;
+    display: block;
+    width: 100%;
+  }
+
+}
